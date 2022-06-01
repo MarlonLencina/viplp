@@ -1,0 +1,29 @@
+.button__talkwithus {
+
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    background-color: var(--yellow);
+    border-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >p {
+        font-weight: var(--multi-bold);
+        font-size: 16px;
+    }
+
+    >img {
+        margin-left: 12px;
+    }
+
+}
+
+.button__container {
+    width: 200px;
+}

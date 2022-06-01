@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <filter id="Elipse_4254" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_65546" data-name="Grupo 65546" transform="translate(-721 -628)">
+    <circle id="Elipse_4255" data-name="Elipse 4255" cx="48" cy="48" r="48" transform="translate(728 632)" fill="#f6f6f6"/>
+    <g transform="matrix(1, 0, 0, 1, 721, 628)" filter="url(#Elipse_4254)">
+      <circle id="Elipse_4254-2" data-name="Elipse 4254" cx="40" cy="40" r="40" transform="translate(15 12)"/>
+    </g>
+    <g id="Grupo_65545" data-name="Grupo 65545" transform="translate(131.156 160)">
+      <path id="Caminho_94603" data-name="Caminho 94603" d="M97.086,0q-1.375.98-2.744,2.071A54.951,54.951,0,0,0,83.468,13.366c-3.5,5.074-4.7,9.587-2.693,11.981.066.078.132.154.2.223a.086.086,0,0,1-.037-.014.219.219,0,0,1-.046-.014l-.02-.008a.1.1,0,0,1-.026-.011,4.929,4.929,0,0,1-1.641-1.047c-2.191-2.135-2.017-6.19.04-11.111A52.351,52.351,0,0,1,87.934,0Z" transform="translate(568.602 504.044)" fill="#fcb813"/>
+      <path id="Caminho_94642" data-name="Caminho 94642" d="M27.746,26.611l-2,3.8L24.915,32H16.809l-.835-1.592L11.78,22.426l-3.5-6.661L3.5,6.664,0,0H9.778l3.5,6.664,4.782,9.1,2.8,5.337.694,1.324.717,1.366c.023.045.046.089.069.131a4.86,4.86,0,0,0,.852,1.11,6.394,6.394,0,0,0,4.552,1.578" transform="translate(624 504)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Caminho_94643" data-name="Caminho 94643" d="M92.072,30.611c-4.8,4.616-7.05,9.129-5.418,11.945-1.87-2.549-.29-7.048,3.677-11.945a49.793,49.793,0,0,1,6.652-6.661h3.78a53.424,53.424,0,0,0-8.691,6.661" transform="translate(562.76 486.714)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Caminho_94644" data-name="Caminho 94644" d="M87.572,59.835c-1.5-2.974,1.176-7.5,6.482-11.945h2.4c-6.474,4.071-10.122,8.636-8.88,11.945" transform="translate(561.842 469.435)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
