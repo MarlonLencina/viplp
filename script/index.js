@@ -66,13 +66,16 @@ const iconImg = sidebarButton.childNodes[1]
 
 sidebarButton.addEventListener("click", () => {
 
+    const hasAlreadyActive = Array.from(headerNavigation.classList)
+
+
     if (hasAlreadyActive.includes("mobile__active")) {
         headerNavigation.classList.remove("mobile__active")
         iconImg.src = "./img/assets/sidebaricon.svg"
     } else {
+        console.log("teste2")
         headerNavigation.classList.add("mobile__active")
         iconImg.src = "./img/assets/closeicon.svg"
-
     }
 
 

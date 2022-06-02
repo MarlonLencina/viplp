@@ -11,6 +11,11 @@ body {
     position: relative;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 :root {
     --black: #1B1B1B;
     --yellow: #FCB829;

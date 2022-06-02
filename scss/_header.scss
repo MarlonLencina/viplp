@@ -36,31 +36,26 @@ header {
     .header__nav {
         display: flex;
         align-items: center;
-
+        transition: all .4s;
 
         @media (max-width: 840px) {
-            visibility: hidden;
+            position: absolute;
+            top: 77px;
+            left: 0;
+            height: calc(100vh - 77px);
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            background-color: var(--white);
+            padding: 40px 20px;
+            align-items: baseline;
+            margin-left: -1000px;
         }
-
 
         &.mobile__active {
-            @media (max-width: 840px) {
-                visibility: visible;
-
-                margin-left: 0%;
-                transition: all .4s;
-                position: absolute;
-                top: 77px;
-                left: 0;
-                height: calc(100vh - 77px);
-                width: 100%;
-                flex-direction: column;
-                justify-content: center;
-                background-color: var(--white);
-                padding: 40px 20px;
-                align-items: baseline;
-            }
+            margin-left: 0;
         }
+
 
 
     }
