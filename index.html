@@ -10,6 +10,8 @@
         content="A VIP Promotora de Crédito está no mercado há +13 anos e é uma das maiores produções da Fontes, o maior correspondente bancário do país. Essa é uma garantia aos nossos clientes de que todo o processo terá credibilidade, segurança, qualidade e excelência." />
     <link rel="stylesheet" href="https://use.typekit.net/pxp4qsa.css" />
     <meta name="theme-color" content="#FCB829" />
+
+
     <link rel="stylesheet" href="./scss/main.css">
 
 </head>
@@ -26,33 +28,36 @@
 
     <header id="header">
         <div class="header__container">
-            <button id="sidebarButton" class="sidebar_button">
-                <img src="./img/assets/sidebaricon.svg" alt="botão sidebar" srcset="">
-            </button>
-            <img src="./img/assets/logo.svg" alt="Logo VIP">
+            <div class="header__brand">
+                <button id="sidebarButton" class="sidebar_button">
+                    <img src="./img/assets/sidebaricon.svg" alt="botão sidebar" srcset="">
+                </button>
+                <img src="./img/assets/logo.svg" alt="Logo VIP">
+            </div>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li id="hstart" class="header__list__item">
+                    <li id="hstart" class="header__list__item active">
                         <a href="#start">Início</a>
                     </li>
                     <li id="hbenefits" class="header__list__item">
                         <a href="#benefits">Vantagens</a>
                     </li>
-                    <li class="header__list__item">
+                    <li id="hhowitworks" class="header__list__item">
                         <a href="#howItWorks">Como funciona?</a>
                     </li>
-                    <li class="header__list__item">
+                    <li id="hfaq" class="header__list__item">
                         <a href="#FAQ">FAQ</a>
                     </li>
-                    <li class="header__list__item">
+                    <li id="hpartners" class="header__list__item">
                         <a href="#partners">Parceiros</a>
                     </li>
                 </ul>
-                <div class="button__container">
-                    <button class="button__talkwithus">
+                <div class="header__button">
+                    <a href="https://api.whatsapp.com/send?phone=5548999440887&text=Oi,%20gostaria%20de%20simular%20meu%20cr%C3%A9dito%20consignado"
+                        class="button__talkwithus">
                         <p>Fale conosco</p>
                         <img src="./img/assets/whatsapp.svg" alt="Logo whatsapp">
-                    </button>
+                    </a>
                 </div>
             </nav>
         </div>
@@ -77,10 +82,11 @@
                     Praticidade e comodidade ao pedir seu Empréstimo Consignado. Peça pelo computador ou celular.
                 </p>
                 <div class="main__button__container">
-                    <button class="button__talkwithus">
+                    <a href="https://api.whatsapp.com/send?phone=5548999440887&text=Oi,%20gostaria%20de%20simular%20meu%20cr%C3%A9dito%20consignado"
+                        class="button__talkwithus">
                         <p>Fale conosco</p>
                         <img src="./img/assets/whatsapp.svg" alt="Logo whatsapp">
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -191,10 +197,11 @@
                         Buscamos a melhor proposta para você, e garantimos um bom negócio com rapidez.</p>
                 </div>
                 <div class="bestOpportunity__button__container">
-                    <button class="button__talkwithus">
+                    <a href="https://api.whatsapp.com/send?phone=5548999440887&text=Oi,%20gostaria%20de%20simular%20meu%20cr%C3%A9dito%20consignado"
+                        class="button__talkwithus">
                         <p>Fale conosco</p>
                         <img src="./img/assets/whatsapp.svg" alt="Logo whatsapp">
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="bestOpportunity__right">
@@ -342,10 +349,11 @@
                 </div>
 
                 <div class="steps__button_container">
-                    <button class="button__talkwithus">
+                    <a href="https://api.whatsapp.com/send?phone=5548999440887&text=Oi,%20gostaria%20de%20simular%20meu%20cr%C3%A9dito%20consignado"
+                        class="button__talkwithus">
                         <p>Fale conosco</p>
                         <img src="./img/assets/whatsapp.svg" alt="Logo whatsapp">
-                    </button>
+                    </a>
                 </div>
 
             </div>
@@ -518,19 +526,20 @@
                 <div class="section__options">
                     <div class="site__map">
                         <h2 class="section__title">Site Map</h2>
-                        <a href="#" class="section__item">Vantagens</a>
-                        <a href="#" class="section__item">Como Funciona</a>
-                        <a href="#" class="section__item">FAQ</a>
-                        <a href="#" class="section__item">Parceiro</a>
+                        <a href="#benefits" class="section__item">Vantagens</a>
+                        <a href="#howItWorks" class="section__item">Como Funciona</a>
+                        <a href="#FAQ" class="section__item">FAQ</a>
+                        <a href="#partners" class="section__item">Parceiro</a>
                     </div>
                     <div class="contact__us">
                         <h2 class="section__title">Fale Conosco</h2>
 
-                        <a href="#" class="section__item">
+                        <a href="https://api.whatsapp.com/send?phone=5548999440887&text=Oi,%20gostaria%20de%20simular%20meu%20cr%C3%A9dito%20consignado"
+                            class="section__item">
                             <img src="./img/assets/whatsappicon.svg" alt="Logo Whatsapp">
                             (48) 99944-0887
                         </a>
-                        <a href="#" class="section__item">
+                        <a href="mailto:sac@vipfinanceira.com.br" class="section__item">
                             <img src="./img/assets/mailicon.svg" alt="Envio de e-mail">
                             sac@vipfinanceira.com.br</a>
                         <a href="#" class="section__item">Uso de cookies</a>
@@ -540,15 +549,15 @@
                     <div class="follow_us">
                         <h2 class="section__title">Siga-nos</h2>
 
-                        <a href="#" class="section__item">
+                        <a href="https://www.facebook.com/vipfinanceira/" class="section__item">
                             <img src="./img/assets/facebookicon.svg" alt="Logo Faceboo">
                             Facebook
                         </a>
-                        <a href="#" class="section__item">
+                        <a href="https://www.instagram.com/vip.promotora/" class="section__item">
                             <img src="./img/assets/instagramicon.svg" alt="Logo Instagram">
                             Instagram
                         </a>
-                        <a href="#" class="section__item">
+                        <a href="https://www.linkedin.com/company/vip-promotora-de-cr%C3%A9dito/" class="section__item">
                             <img src="./img/assets/linkedinicon.svg" alt="Logo Linkedin">
                             Linkedin
                         </a>

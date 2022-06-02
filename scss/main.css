@@ -951,11 +951,17 @@ header {
   z-index: 12;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   right: 0;
   left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+@media (max-width: 840px) {
+  header {
+    max-height: 77px;
+  }
 }
 
 header .header__container {
@@ -970,7 +976,6 @@ header .header__container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
   padding: 16px 20px;
 }
 
@@ -979,6 +984,10 @@ header .header__container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -993,11 +1002,37 @@ header .header__nav {
 
 @media (max-width: 840px) {
   header .header__nav {
-    display: none;
+    visibility: hidden;
   }
 }
 
-header .header__list {
+@media (max-width: 840px) {
+  header .header__nav.mobile__active {
+    visibility: visible;
+    margin-left: 0%;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    position: absolute;
+    top: 77px;
+    left: 0;
+    height: calc(100vh - 77px);
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: var(--white);
+    padding: 40px 20px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.header__list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,44 +1041,82 @@ header .header__list {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 32px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
 }
 
-header .header__list .active {
-  text-decoration: underline;
+@media (max-width: 840px) {
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-header .header__list .active::after {
-  content: "";
-  width: 25px;
-  height: 2px;
-  background-color: var(--yellow);
-  position: absolute;
-  top: -16px;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
+@media (min-width: 960px) {
+  .header__list .active {
+    text-decoration: underline;
+  }
+  .header__list .active::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: var(--yellow);
+    position: absolute;
+    top: -16px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
-header .header__list__item {
+.header__list__item {
   position: relative;
   padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
 }
 
-header .header__list__item > a {
+.header__list__item > a {
   color: var(--gray-2);
   font-size: 16px;
   text-decoration: none;
   font-family: var(--regular);
 }
 
-header .header__list__item + li {
-  margin-left: 32px;
+@media (min-width: 960px) {
+  .header__list__item + li {
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header__list__item + li {
+    margin-top: 32px;
+  }
 }
 
 /* .fixed {
     position: fixed;
 } */
+.header__button {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .header__button {
+    max-width: 280px;
+  }
+}
+
 footer .footer__container {
   max-width: 1216px;
   margin: 0 auto;
@@ -1361,6 +1434,7 @@ footer .section__by > a > img {
   border-style: none;
   -webkit-transition: all 2s;
   transition: all 2s;
+  cursor: pointer;
 }
 
 .accordion__header {
@@ -1424,6 +1498,7 @@ footer .section__by > a > img {
   position: absolute;
   cursor: pointer;
   left: 20px;
+  top: 30px;
 }
 
 @media (min-width: 840px) {
@@ -1433,6 +1508,8 @@ footer .section__by > a > img {
 }
 
 .button__talkwithus {
+  text-decoration: none;
+  color: var(--black);
   width: 100%;
   height: 56px;
   padding: 0 16px;
